@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+GRPC Request,2000,154,0,6548,499.46,1.40%,6.66813,6791.77,0,1042987.1
+TOTAL,2000,154,0,6548,499.46,1.40%,6.66813,6791.77,0,1042987.1

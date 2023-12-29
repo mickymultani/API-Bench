@@ -1,0 +1,40 @@
+// book_service.proto
+
+syntax = "proto3";
+
+package book;
+
+// The book service definition.
+service BookService {
+  // Creates a new book
+  rpc CreateBook (Book) returns (Book);
+  // Retrieves a book by ID
+  rpc GetBook (BookId) returns (Book);
+  // Lists all books
+  rpc ListBooks (Empty) returns (BookList);
+  // Updates a book
+  rpc UpdateBook (Book) returns (Book);
+  // Deletes a book
+  rpc DeleteBook (BookId) returns (Empty);
+}
+
+// The request message containing the book's information.
+message Book {
+  string id = 1;
+  string title = 2;
+  string author = 3;
+  int32 year = 4;
+}
+
+// The request message containing the book's ID.
+message BookId {
+  string id = 1;
+}
+
+// The response message containing the list of books.
+message BookList {
+  repeated Book books = 1;
+}
+
+// An empty message for operations that don't require content.
+message Empty {}
