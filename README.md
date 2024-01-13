@@ -1,6 +1,6 @@
 # API Performance Benchmarking Project
 
-## CAUTION:  Keep an eye on your temp files. API testing on localhost with Jmeter will fillup your temp storage pretty quickly. You will not be able to delete this on windows machine just using the explorer -- use TreeView and then delete the temp files to free up space.
+## CAUTION:  Keep an eye on your temp files. API testing on localhost with Jmeter will fillup your temp storage pretty quickly. You will not be able to delete this on windows machine just using the explorer -- use TreeSize and then delete the temp files to free up space.
 
 ## Overview
 
